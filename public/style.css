@@ -20,8 +20,8 @@
 .calculater form input{
     border: 0;
     outline: 0;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 10px;
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
     background: transparent;
@@ -37,15 +37,15 @@ form .display{
     border-radius: 10px;
     background-color: white;
 }
-form .display input{
+ form .display input{
     text-align: right;
     flex: 1;
     color: black;
     font-size: 45px;
     box-shadow: none;
-}
+} 
 form input.equal{
-    width: 145px;
+    width: 125px;
 }
 form input.operator{
     color: #33ffd8;
@@ -53,21 +53,26 @@ form input.operator{
 @media screen and (max-width: 430px) {
     .calculater {
         width: 80%;
-        padding: 23px;
+        padding: 15px;
+        gap: 10px;
     }
-    
     .calculater form input {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         font-size: 18px;
         margin: 5px;
     }
-
+    .buttons{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     form .display input {
-        font-size: 35px;
+        font-size: 30px;
+        width: 100%;
     }
 
     form input.equal {
-        width: 115px;
+        width: 95px;
     }
 }
